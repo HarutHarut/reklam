@@ -1,0 +1,84 @@
+.imgpnl-container {
+    position: relative;
+}
+
+.imgpnl-container input {
+    opacity: 0;
+    position: absolute;
+    z-index: -9999;
+    top: 0;
+    left: 0;
+}
+
+.imgpnl-container label {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.imgpnl-container .gallery {
+    width: calc(100% + 12px);
+    margin-left: -6px;
+}
+
+.imgpnl-container .img-thmb {
+    height: 150px;
+    width: 150px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    overflow: hidden;
+    border: solid 1px #eee;
+    display: inline-block;
+    margin: 6px;
+    cursor: move;
+    position: relative;
+}
+
+.imgpnl-container .img-thmb.loading {
+    opacity: 0.5;
+    pointer-events: none;
+    transform: scale(0.8);
+}
+
+.imgpnl-container .img-thmb img {
+    height: 100%;
+    width: 100%;
+    display: block;
+    object-fit: contain;
+    object-position: 50% 50%;
+}
+
+.imgpnl-container .img-thmb .rem-btn {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: #ff1919;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 6px;
+    right: 6px;
+    transition: all 230ms cubic-bezier(.61, 1, .88, 1) 1ms;
+}
+
+.imgpnl-container .img-thmb .rem-btn:hover {
+    background-color: #d92020;
+    box-shadow: inset 0 0 0 3px #ff1919;
+}
+
+.imgpnl-container .img-thmb .rem-btn span {
+    height: 2px;
+    width: 10px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: block;
+    transform-origin: center center;
+    transform: rotate(-45deg);
+}
+
+.imgpnl-container .img-thmb .rem-btn span:last-child {
+    transform: rotate(45deg);
+}

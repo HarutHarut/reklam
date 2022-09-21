@@ -1,0 +1,529 @@
+#post {
+    padding-bottom: 20px;
+}
+
+
+#post > .content {
+    flex: 1;
+    min-width: 1px;
+}
+
+#post > .sidebar {
+    flex: 0 0 300px;
+    margin-left: 20px;
+    min-width: 1px;
+    text-align: center;
+}
+
+#post > .sidebar .banner {
+    height: 600px;
+}
+
+#post > .sidebar .banner.small {
+    height: 250px;
+}
+
+#post > .content .tile {
+    padding: 24px 30px;
+    margin-bottom: 15px;
+}
+
+#post > .content .tile:first-of-type {
+    padding-bottom: 0;
+}
+
+#post > .content .head .upper {
+    margin-top: -10px;
+    justify-content: space-between;
+}
+
+#post > .content .head .upper .tag {
+    background: #EFA00B;
+    border-radius: 0px 50px 50px 0px;
+    color: #fff;
+    margin-left: -30px;
+    padding: 8px 40px 8px 30px;
+    font-weight: 600;
+    font-size: 14px;
+    display: inline-block;
+}
+
+#post > .content .head .upper .price {
+    font-weight: 700;
+    font-size: 24px;
+    color: #000000;
+}
+
+#post > .content .head h1 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #000000;
+    padding: 20px 0;
+}
+
+
+#post > .content .gallery {
+}
+
+#post > .content .gallery-main {
+    background-color: #eee;
+    height: 480px;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#post > .content .gallery-main-controls {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+#post > .content .gallery-main-controls > div {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(63, 63, 63, 0.6);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    font-weight: 600;
+    pointer-events: auto;
+    transition: all 330ms cubic-bezier(.61, 1, .88, 1) 1ms;
+}
+
+#post > .content .gallery-main-controls > div i {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#post > .content .gallery-main-controls .arr {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 10px;
+    right: auto;
+}
+
+#post > .content .gallery-main-controls .arr:hover, #post > .content .gallery-main-controls .fullscreen:hover {
+    background: rgba(63, 63, 63, 0.75);
+}
+
+#post > .content .gallery-main-controls .arr.right, #post > .content .gallery-main-controls .fullscreen {
+    right: 10px;
+    left: auto;
+}
+
+#post > .content .gallery-main-controls .arr.left i {
+    left: -2px;
+    position: relative;
+}
+
+#post > .content .gallery-main-controls .fullscreen {
+    bottom: 10px;
+}
+
+#post > .content .gallery-main-controls .count {
+    height: 30px;
+    width: auto;
+    padding: 0 20px;
+    border-radius: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 15px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+#post > .content .gallery-thumbnails {
+    font-size: 0;
+    margin-left: -8px;
+    width: calc(100% + 8px);
+    margin-top: 15px;
+}
+
+#post > .content .gallery-thumbnails .gallery-thumbnail {
+    height: 65px;
+    width: 65px;
+    background-color: #eee;
+    display: inline-block;
+    margin-left: 8px;
+    border-radius: 3px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 330ms cubic-bezier(.61, 1, .88, 1) 1ms;
+}
+
+#post > .content .gallery-thumbnails .gallery-thumbnail.active {
+    box-shadow: 0 0 0 2px #0275c4;
+}
+
+#post > .content .gallery-thumbnails .gallery-thumbnail img, #post > .content .gallery-main img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: 50% 50%;
+}
+
+#post > .content .controls {
+    margin-top: 30px;
+    border-top: solid 1px #e2e2e2;
+    position: relative;
+}
+
+#post > .content .controls > a {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    cursor: pointer;
+    transition: all 230ms cubic-bezier(.61, 1, .88, 1) 1ms;
+}
+
+#post > .content .controls > a i {
+    font-weight: 300;
+    color: #efa00b;
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+#post > .content .controls > a.active i {
+    font-weight: 600;
+}
+
+#post > .content .controls > a:hover, #post > .content .controls .overlay a:hover {
+    background-color: #f1f1f1;
+}
+
+#post > .content .controls > a:hover i {
+    font-weight: 600;
+}
+
+#post > .content .controls .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: none;
+}
+
+#post > .content .controls .overlay > .flx {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#post > .content .controls .overlay a {
+    font-weight: 500;
+    font-size: 14px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    cursor: pointer;
+    height: 100%;
+    transition: all 230ms cubic-bezier(.61, 1, .88, 1) 1ms;
+}
+
+#post > .content .controls .overlay a i {
+    color: #0075C4;
+    font-size: 23px;
+    margin-right: 20px;
+}
+
+#post > .content .tile h2 {
+    font-weight: 600;
+    font-size: 16px;
+    color: #0075C4;
+    margin-bottom: 15px;
+}
+
+.specs-tbl {
+    width: 100%;
+}
+
+.specs-tbl tr {
+    border-bottom: solid 1px #e2e2e2;
+}
+
+.specs-tbl td {
+    padding: 10px 0;
+    font-weight: 300;
+    font-size: 14px;
+    color: #000000;
+}
+
+.specs-tbl td:last-child {
+    font-weight: 500;
+    text-align: right;
+}
+
+#post > .content .tile > p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 143%;
+    color: #000000;
+}
+
+#post > .content .tile .location p {
+    font-size: 14px;
+    color: #000000;
+}
+
+#post > .content .tile .location {
+    justify-content: space-between;
+}
+
+#post > .content .tile .location a {
+    white-space: nowrap;
+    font-weight: 500;
+    font-size: 14px;
+    display: inline-block;
+    color: #0075C4;
+    margin-left: 10px;
+    transition: all 230ms cubic-bezier(.61, 1, .88, 1) 1ms;
+}
+
+#post > .content .tile .location a:hover {
+    color: #045f9f;
+}
+
+#post > .content .tile .location a i {
+    transform: scale(1.4);
+    margin-right: 10px;
+    position: relative;
+    top: -1px;
+}
+
+
+#post > .content > .banner-container .banner {
+    width: 728px;
+    height: 90px;
+    margin: auto auto 15px;
+}
+
+#post > .content .suggested-posts {
+    margin-top: 25px;
+}
+
+#post > .sidebar .seller {
+    padding: 0 30px;
+}
+
+#post > .sidebar .seller .bio {
+    padding-top: 40px;
+}
+
+#post > .sidebar .seller .bio .avatar {
+    max-height: 73px;
+    max-width: 80%;
+    object-fit: contain;
+    object-position: 50% 50%;
+    margin: auto;
+}
+
+
+#post > .sidebar .seller .bio .avatar img {
+    height: 64px;
+    width: auto;
+    object-fit: contain;
+    object-position: 50% 50%;
+}
+
+#post > .sidebar .seller .bio .avatar > span {
+    height: 73px;
+    width: 73px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 50%;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+#post > .sidebar .seller .bio a {
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+    display: block;
+    padding: 8px 0;
+    margin-top: 6px;
+    transition: all 230ms cubic-bezier(.61, 1, .88, 1) 1ms;
+}
+
+#post > .sidebar .seller .bio a:hover {
+    color: #0075C4;
+}
+
+#post > .sidebar .seller .bio p {
+    font-weight: 300;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+#post > .sidebar .banner {
+    margin: 15px 0;
+}
+
+#post > .sidebar .info {
+    border-bottom: solid 1px #e2e2e2;
+    padding: 30px 0;
+    position: relative;
+}
+
+#post > .sidebar .info a {
+    display: block;
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+    transition: all 230ms cubic-bezier(.61, 1, .88, 1) 1ms;
+}
+
+#post > .sidebar .info.location a {
+    font-size: 13px;
+}
+
+
+#post > .sidebar .info.location.multiline a {
+    font-weight: 300;
+    font-size: 13px;
+    color: #000;
+    text-align: center;
+    line-height: 2;
+}
+
+#post > .sidebar .info.location.multiline a span {
+    display: inline-block;
+    width: auto;
+    text-align: left;
+}
+
+#post > .sidebar .info.website a {
+
+}
+
+#post > .sidebar .info a:hover {
+    color: #0075C4 !important;
+    text-decoration: underline;
+}
+
+#post > .sidebar .info i {
+    font-size: 21px;
+    color: #0075C4;
+    display: block;
+}
+
+#post > .sidebar .info a.brd {
+    color: #0075C4;
+    font-weight: 700;
+    font-size: 13px;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none !important;
+}
+
+#post > .sidebar .info a.brd:hover {
+    background-color: #0075C4;
+    color: #fff !important;
+}
+
+#post > .sidebar .all-posts {
+    padding: 22px 0;
+}
+
+#post > .sidebar .all-posts a {
+    color: #0075C4;
+    font-size: 13px;
+}
+
+#post > .sidebar .all-posts a:hover {
+    text-decoration: underline;
+}
+
+#post > .sidebar .post-info {
+    text-align: left;
+    padding: 28px 36px;
+}
+
+#post > .sidebar .post-info i {
+    font-size: 15px;
+    color: #0075C4;
+    margin-right: 16px;
+}
+
+#post > .sidebar .post-info li {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 24px;
+    color: #000;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+#post > .sidebar .post-info li:last-child {
+    margin-bottom: 0;
+}
+
+#post > .sidebar .post-info li strong {
+    font-weight: 500;
+    margin-left: 4px;
+}
+
+#modal-message .email-head {
+    margin: 20px 0;
+    border-bottom: solid 1px #ddd;
+    padding-bottom: 20px;
+}
+
+#modal-message .email-head p {
+    line-height: 1.6;
+    margin: 5px 0;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+#modal-message .email-head p strong {
+    font-weight: 500;
+}
+
+#modal-report .content, #modal-message .content {
+    max-width: 600px;
+    width: 100%;
+}
+
+
+#lightgallery {
+    display: none;
+}
+
+.lg-outer .lg-thumb-item.active, .lg-outer .lg-thumb-item:hover {
+    border-color: #0075C4 !important;
+}
+
+.successMessage{
+    border: 1px solid mediumseagreen;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    color: #fff;
+    background-color: darkseagreen;
+}

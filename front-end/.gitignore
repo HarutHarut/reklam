@@ -1,0 +1,37 @@
+.phpintel/
+.well-known/
+
+# Ignore .swp files
+*.swp
+
+# Ignore settings
+/conf.php
+conf.php
+
+/cdn
+cdn
+
+error_log
+/error_log
+cgi-bin
+/cgi-bin
+test
+/test
+
+
+# ------- EDITORS -------
+# Ignore sublime project files
+*.sublime-project
+*.sublime-workspace
+# PHPStorm
+/.idea
+
+# Ignore vendor folder
+vendor
+
+# Ignore default cache path
+/cache
+
+# Ignore log files
+/logs
+*.pyc

@@ -1,0 +1,57 @@
+Options -MultiViews
+RewriteEngine On
+
+#HTTPS enforcement
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteBase /
+AddDefaultCharset utf-8
+
+ServerSignature Off
+
+RewriteCond %{REQUEST_FILENAME} !-s
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^profil/nadgradi/?$ /my_profile.php?profile_page=upgrade [L,QSA]
+RewriteRule ^profil/sprememba-gesla/?$ /my_profile.php?profile_page=change_psw [L,QSA]
+RewriteRule ^profil/shranjeno/?$ /my_profile.php?profile_page=saved [L,QSA]
+RewriteRule ^profil/urejanje/?$ /my_profile.php?profile_page=edit_bio [L,QSA]
+RewriteRule ^profil/?$ /my_profile.php?profile_page=landing [L,QSA]
+
+RewriteRule ^trgovina/?$ /eshop.php [L,QSA]
+RewriteRule ^seznam-trgovin/?$ /eshops.php [L,QSA]
+RewriteRule ^oglas/?$ /post.php [L,QSA]
+RewriteRule ^nov-oglas/?$ /create_post.php [L,QSA]
+RewriteRule ^kategorija/?$ /category.php [L,QSA]
+RewriteRule ^oglasevanje-in-ceniki/?$ /advertising.php [L,QSA]
+RewriteRule ^pogosta-vprasanja/?$ /faq.php [L,QSA]
+RewriteRule ^registracija/?$ /register.php [L,QSA]
+
+#404
+ErrorDocument 404 /index.php?page=404
+RewriteRule ^404/?$ /index.php?page=404 [L,QSA]
+
+
+#Block access to htaccess and other files
+RewriteRule ^(\.htaccess|\.gitignore|composer\.json|composer\.lock|conf\.php|README\.md|vendor/|logs/)$ - [F,L,NC]
+<Files "^(\.htaccess|\.gitignore|composer\.json|composer\.lock|README\.md|vendor/|logs/)$">
+	Require all denied
+</Files>
+
+Options All -Indexes
+IndexIgnore *
+
+<ifmodule mod_deflate.c>
+	AddOutputFilterByType DEFLATE text/plain
+	AddOutputFilterByType DEFLATE text/html
+	AddOutputFilterByType DEFLATE application/json
+	AddOutputFilterByType DEFLATE text/xml
+	AddOutputFilterByType DEFLATE text/css
+	AddOutputFilterByType DEFLATE application/xml
+	AddOutputFilterByType DEFLATE application/xhtml+xml
+	AddOutputFilterByType DEFLATE application/rss+xml
+	AddOutputFilterByType DEFLATE application/javascript
+	AddOutputFilterByType DEFLATE application/x-javascript
+</ifmodule>

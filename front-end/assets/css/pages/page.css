@@ -1,0 +1,217 @@
+#subpage .content {
+    padding: 25px 50px;
+    flex: 1;
+}
+
+#subpage h2 {
+    background: #0075C4;
+    border-radius: 0 50px 50px 0;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    display: inline-block;
+    margin-left: -50px;
+    padding: 6px 50px;
+}
+
+#subpage .heading-pin {
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#subpage .heading-pin > span {
+    position: absolute;
+    left: -25px;
+    font-weight: 300;
+    font-size: 18px;
+    display: block;
+    top: 0;
+}
+
+#subpage .heading-pin h3 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #3F3F3F;
+}
+
+#subpage .content p {
+    margin-bottom: 30px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #000;
+    position: relative;
+}
+
+#subpage .content p.brd:after {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: #eee;
+    width: 100%;
+    margin-top: 30px;
+}
+
+#subpage .content p.last {
+    margin-bottom: 0;
+}
+
+#subpage .content p a {
+    color: #0075C4;
+}
+
+#subpage .content p em {
+    color: #EFA00B;
+    font-style: normal;
+    font-weight: 500;
+}
+
+#subpage-banner {
+    flex: 0 0 160px;
+    width: 160px;
+    margin-left: 15px;
+}
+
+#subpage-banner .banner {
+    height: 600px;
+    width: 100%;
+    position: sticky;
+    top: 15px;
+}
+
+
+#subpage .help {
+    justify-content: center;
+    position: relative;
+}
+
+#subpage .help > strong {
+    font-weight: 600;
+    font-size: 16px;
+    color: #0075C4;
+    position: absolute;
+    top: 24px;
+    left: 30px;
+}
+
+#subpage .help .option {
+    text-align: center;
+    padding: 30px 60px;
+}
+
+#subpage .help .option a {
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+    display: block;
+    margin-bottom: 15px;
+}
+
+#subpage .help .option a i {
+    color: #0075C4;
+    font-size: 18px;
+    width: 18px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+#subpage .help .option p {
+    font-weight: 300;
+    font-size: 16px;
+    color: #000000;
+}
+
+.pricing-boxes {
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.pricing-boxes .box {
+    flex: 1;
+    max-width: 290px;
+    padding: 50px 25px;
+    background: #FFFFFF;
+    border: 1px solid #0075C4;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.pricing-boxes .box > i {
+    font-size: 41px;
+    margin-bottom: 14px;
+    color: #EFA00B;
+}
+
+.pricing-boxes .box:first-child > i {
+    transform: scale(0.6);
+}
+
+.pricing-boxes .box:nth-child(2) > i {
+    transform: scale(0.8);
+}
+
+.pricing-boxes .box h4 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.pricing-boxes .box .prices {
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: solid 1px #ddd;
+    min-height: 185px;
+}
+
+.pricing-boxes .box .prices .price {
+    background: #F2F2F2;
+    border-radius: 10px;
+    padding: 6px;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 13px;
+}
+
+.pricing-boxes .box .prices .price strong {
+    margin-right: 10px;
+}
+
+.pricing-boxes .box ul {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.pricing-boxes .box ul li {
+    position: relative;
+    padding-left: 40px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.pricing-boxes .box ul li .inf {
+    transform: scale(1.8);
+    display: inline-block;
+    margin: 0 4px;
+}
+
+.pricing-boxes .box ul li i {
+    position: absolute;
+    left: 0;
+    font-size: 18px;
+    top: 2px;
+    color: #0075C4;
+}
+
+.pricing-boxes .box ul.l1 {
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: solid 1px #ddd;
+}
+
+.pricing-boxes .box ul.l1 li i {
+    color: #26AD10;
+}

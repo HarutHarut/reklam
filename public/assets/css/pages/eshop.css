@@ -1,0 +1,142 @@
+#eshop-bio .cover {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    margin-top: 40px;
+    background-color: #ddd;
+}
+
+#eshop-bio .bio {
+    padding: 30px 35px;
+    width: 1000px;
+    max-width: 95%;
+    margin: -50px auto 50px;
+}
+
+#eshop-bio .bio .logo {
+    height: 60px;
+    width: 100%;
+    text-align: center;
+}
+
+#eshop-bio .bio .logo img {
+    height: 100%;
+    max-width: 80%;
+    object-fit: contain;
+    object-position: 50% 50%;
+}
+
+#eshop-bio .bio .left {
+    flex: 0 0 300px;
+    margin-right: 30px;
+    padding-right: 20px;
+}
+
+#eshop-bio .bio .right {
+    flex: 1;
+    padding-bottom: 22px;
+    position: relative;
+}
+
+#eshop-bio .bio .title h1 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #000000;
+}
+
+#eshop-bio .bio .title p {
+    font-size: 15px;
+    margin-top: 5px;
+    color: #000000;
+}
+
+#eshop-bio .bio .right .head {
+    justify-content: space-between;
+}
+
+#eshop-bio .bio .right .head .social a {
+    display: inline-block;
+    padding: 0 2px;
+    margin: 0 4px;
+}
+
+#eshop-bio .bio .right .head .social i {
+    font-size: 19px;
+    color: #D0D0D0;
+    transition: all 230ms cubic-bezier(.61, 1, .88, 1) 1ms;
+}
+
+#eshop-bio .bio .right .head .social a:hover i {
+    color: #0075C4;
+}
+
+#eshop-bio .bio .right .description {
+    margin-top: 52px;
+    line-height: 1.8;
+}
+
+#eshop-bio .bio .right .description strong {
+    font-weight: 600;
+}
+
+#eshop-bio .bio .right .date-registered {
+    font-weight: 600;
+    font-size: 12px;
+    text-align: right;
+    color: #D0D0D0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#eshop-bio .bio .left .info {
+    position: relative;
+    margin-top: 50px;
+}
+
+#eshop-bio .bio .left .info:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 120%;
+    width: 1px;
+    background-color: #e2e2e2;
+    right: -15px;
+    top: -10%;
+}
+
+#eshop-bio .bio .left li {
+    position: relative;
+    padding-left: 36px;
+    margin: 25px 0;
+    font-weight: 300;
+    font-size: 13px;
+    color: #000;
+}
+
+#eshop-bio .bio .left li.location {
+    line-height: 1.9;
+}
+
+#eshop-bio .bio .left li a {
+    font: inherit;
+    color: inherit;
+    display: block;
+    transition: all 230ms cubic-bezier(.61, 1, .88, 1) 1ms;
+}
+
+#eshop-bio .bio .left li a:hover {
+    color: #0075C4;
+}
+
+#eshop-bio .bio .left li i {
+    font-size: 16px;
+    color: #0075C4;
+    position: absolute;
+    left: 0;
+}
+
+#eshop-bio .bio .left li.location i {
+    top: 4px;
+}

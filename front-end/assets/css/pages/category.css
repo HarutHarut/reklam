@@ -1,0 +1,18 @@
+#filter-controls .btn.bgt {
+    color: #fff;
+    margin-top: 8px;
+}
+
+#filter-controls .btn {
+
+}
+
+#filter-controls .btn.save {
+    background-color: transparent;
+    opacity: 0.5;
+    margin-top: 4px;
+}
+
+#filter-controls .btn.save:hover {
+    opacity: 1;
+}
